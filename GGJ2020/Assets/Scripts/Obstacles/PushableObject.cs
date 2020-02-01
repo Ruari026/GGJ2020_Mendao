@@ -73,7 +73,7 @@ public class PushableObject : MonoBehaviour
                 fishToAttach.transform.parent = this.transform;
 
                 Rigidbody rb = fishToAttach.GetComponent<Rigidbody>();
-                rb.centerOfMass = (transform.forward);
+                rb.centerOfMass = (transform.forward * 1.5f);
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
             else if ((angle > 315) && (angle < 360))
@@ -82,7 +82,7 @@ public class PushableObject : MonoBehaviour
                 fishToAttach.transform.parent = this.transform;
 
                 Rigidbody rb = fishToAttach.GetComponent<Rigidbody>();
-                rb.centerOfMass = (transform.forward);
+                rb.centerOfMass = (transform.forward * 1.5f);
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
             // Bottom Side
@@ -92,7 +92,7 @@ public class PushableObject : MonoBehaviour
                 fishToAttach.transform.parent = this.transform;
 
                 Rigidbody rb = fishToAttach.GetComponent<Rigidbody>();
-                rb.centerOfMass = (transform.forward);
+                rb.centerOfMass = (transform.forward * 1.5f);
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
@@ -105,7 +105,7 @@ public class PushableObject : MonoBehaviour
                 fishToAttach.transform.parent = this.transform;
 
                 Rigidbody rb = fishToAttach.GetComponent<Rigidbody>();
-                rb.centerOfMass = (transform.forward);
+                rb.centerOfMass = (transform.forward * 1.5f);
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
             // Left Side
@@ -115,7 +115,7 @@ public class PushableObject : MonoBehaviour
                 fishToAttach.transform.parent = this.transform;
 
                 Rigidbody rb = fishToAttach.GetComponent<Rigidbody>();
-                rb.centerOfMass = (transform.forward);
+                rb.centerOfMass = (transform.forward * 1.5f);
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
@@ -180,6 +180,10 @@ public class PushableObject : MonoBehaviour
             {
                 rangePos += Time.deltaTime;
             }
+            else if (movementDirection.x == 0)
+            {
+                rangePos += 0;
+            }
             else
             {
                 rangePos -= Time.deltaTime;
@@ -194,6 +198,10 @@ public class PushableObject : MonoBehaviour
             else if ((directionOfPath.z < 0) && (movementDirection.z < 0))
             {
                 rangePos += Time.deltaTime;
+            }
+            else if (movementDirection.z == 0)
+            {
+                rangePos += 0;
             }
             else
             {
@@ -212,6 +220,11 @@ public class PushableObject : MonoBehaviour
         else if (rangePos > lineMagnitude)
         {
             newPosition = endPos.position;
+
+            foreach (GameObject g in attachedFish)
+            {
+                DetachFish(g);
+            }
             onPathEnd.Invoke();
         }
         else
