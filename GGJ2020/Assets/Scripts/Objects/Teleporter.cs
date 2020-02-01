@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Teleporter : MonoBehaviour
 {
-    bool inRange;
-    GameObject fishLeft;
-    GameObject fishRight;
-    bool left;
+    public bool inRange;
+    public GameObject fishLeft;
+    public GameObject fishRight;
+    public bool left;
 
     // Start is called before the first frame update
     void Start()
     {
-        fishLeft = GameObject.Find("FishPrefab (Left)");
-        fishRight = GameObject.Find("FishPrefab (Right)");
+        fishRight = GameObject.FindGameObjectWithTag("RightFish");
+        fishLeft = GameObject.FindGameObjectWithTag("LeftFish");
     }
 
     // Update is called once per frame
@@ -33,11 +33,11 @@ public class Teleporter : MonoBehaviour
     {
         inRange = true;
 
-        if (other.tag == "FishLeft")
+        if (other.tag == "LeftFish")
         {
             left = true;
         }
-        else if (other.tag == "FishRight")
+        else if (other.tag == "RightFish")
         {
             left = false;
         }
