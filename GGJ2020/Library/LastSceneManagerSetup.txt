@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Testing Scenes/MultiCameraTest.unity
+- path: Assets/Scenes/Testing Scenes/Roelof maze Test.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
