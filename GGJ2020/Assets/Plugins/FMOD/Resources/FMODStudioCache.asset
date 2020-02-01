@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7293352061440962546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SignalLeft
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SignalLeft
+  guid: b4cf59adb24bb14ebceb79e5394b33f6
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &-7106555057903657722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/Repair
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/Repair
+  guid: 35c734b724d076428b3e3333c3a8438a
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 671
+--- !u!114 &-7043584525413547803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637161788130292868
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1532
+  Exists: 1
+--- !u!114 &-5650806809856499714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragRight/RightStopDrag
+  m_EditorClassIdentifier: 
+  Name: RightStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-5537251701917594280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161788130193136
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2318784
+  Exists: 1
+--- !u!114 &-3442320941277819528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/Destroy
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/Destroy
+  guid: cff27f12a752a244b688011814525f6e
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 347
+--- !u!114 &-2845431761200855077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/DragRight
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/DragRight
+  guid: 38f8709328ea424b9045793d97a6acbd
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5650806809856499714}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2551
+--- !u!114 &-2500985725088115839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/CaveAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/CaveAmbience
+  guid: 3410b0ec8259e34f8c149c47670daa1c
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2978
+--- !u!114 &-835648248730739754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game/StartGong
+  m_EditorClassIdentifier: 
+  Path: event:/Game/StartGong
+  guid: 01bad32f8e0efe4caa453e69ba668d11
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -7043584525413547803}
+  - {fileID: -5537251701917594280}
+  EditorEvents:
+  - {fileID: -835648248730739754}
+  - {fileID: 6587347114396865036}
+  - {fileID: 922725418491879707}
+  - {fileID: 691435714852333758}
+  - {fileID: -2500985725088115839}
+  - {fileID: -7106555057903657722}
+  - {fileID: -2845431761200855077}
+  - {fileID: 4915731172756533115}
+  - {fileID: -7293352061440962546}
+  - {fileID: -3442320941277819528}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -5537251701917594280}
+  StringsBanks:
+  - {fileID: -7043584525413547803}
+  stringsBankWriteTime: 637161788130292868
+  cacheVersion: 3
+--- !u!114 &691435714852333758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: 216c875991364f4cb6364731a50270ec
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 124055
+--- !u!114 &922725418491879707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game/Success
+  m_EditorClassIdentifier: 
+  Path: event:/Game/Success
+  guid: 1b140d686ba3fe4db1f19fadd38d38db
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7500
+--- !u!114 &4915731172756533115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/DragLeft
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/DragLeft
+  guid: 71c01fcaa4e8e94fab93c4962fac9360
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8747281923558379864}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2551
+--- !u!114 &6587347114396865036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SignalRight
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SignalRight
+  guid: 132cc747787453419d734a0555e44a95
+  Banks:
+  - {fileID: -5537251701917594280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &8747281923558379864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragLeft/LeftStopDrag
+  m_EditorClassIdentifier: 
+  Name: LeftStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
