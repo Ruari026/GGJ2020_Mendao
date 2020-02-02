@@ -11,12 +11,12 @@ public class FishRestoreAbility : FishAbility
     public UnityEvent OnRestoreEvent;
 
     // Fish Components
-    Animator theAnimController;
+    public Animator theAnimController;
 
     // Start is called before the first frame update
     void Start()
     {
-        theAnimController = this.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
