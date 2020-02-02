@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FishRestoreAbility : FishAbility
 {
     public float restoreDistance;
     public float restoreRadius;
+
+    public UnityEvent OnRestoreEvent;
 
     // Fish Components
     Animator theAnimController;
@@ -37,5 +40,6 @@ public class FishRestoreAbility : FishAbility
 
         // Triggering Restoration Animation On The Fish
         theAnimController.SetTrigger("Restoring");
+        OnRestoreEvent.Invoke();
     }
 }
