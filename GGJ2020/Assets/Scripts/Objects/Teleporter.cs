@@ -5,8 +5,8 @@ using UnityEngine;
 public class Teleporter : MonoBehaviour
 {
     public bool inRange;
-    public GameObject fishLeft;
-    public GameObject fishRight;
+    GameObject fishLeft;
+    GameObject fishRight;
     public bool left;
 
     // Start is called before the first frame update
@@ -14,6 +14,15 @@ public class Teleporter : MonoBehaviour
     {
         fishRight = GameObject.FindGameObjectWithTag("RightFish");
         fishLeft = GameObject.FindGameObjectWithTag("LeftFish");
+
+        if (gameObject.layer == 9)
+        {
+            transform.GetChild(1).gameObject.SetActive(true);
+        }
+        else if(gameObject.layer == 10)
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame
