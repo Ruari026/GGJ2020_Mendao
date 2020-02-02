@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2031553c8cfbc834392c0b7e6e486abc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   leftCamera: {fileID: 0}
   rightCamera: {fileID: 0}
   mergePoint: 0
@@ -497,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 7078302539697494191, guid: c571b5d100cd57948861964266afe30a,
         type: 3}
       propertyPath: followTarget
-      value:
+      value: 
       objectReference: {fileID: 8426418560215489673}
     - target: {fileID: 7078302539875333630, guid: c571b5d100cd57948861964266afe30a,
         type: 3}
@@ -521,7 +521,7 @@ PrefabInstance:
     - target: {fileID: 4008241194000703286, guid: 8fb2215e238b2234abe7568cbdd7ae0c,
         type: 3}
       propertyPath: followTarget
-      value:
+      value: 
       objectReference: {fileID: 8426418561636922339}
     - target: {fileID: 4008241194000703287, guid: 8fb2215e238b2234abe7568cbdd7ae0c,
         type: 3}
@@ -642,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 1883178348747549870, guid: 0d8c61f4d99800f48adaa72e47b28f31,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1883178348747549870, guid: 0d8c61f4d99800f48adaa72e47b28f31,
         type: 3}
