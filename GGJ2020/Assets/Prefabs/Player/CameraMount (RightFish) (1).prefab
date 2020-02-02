@@ -89,9 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5894f5c92b4d8ca4a82876a969969ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectMaterial: {fileID: 2100000, guid: be092d30a5110534ab3bafd167680131, type: 2}
-  minDisplacement: 0
-  maxDisplacement: 0
+  EffectMaterial: {fileID: 2100000, guid: 6eb1f0c9249046c4894ed4de8e0d3143, type: 2}
+  minDisplacement: 0.01
+  maxDisplacement: 0.02
 --- !u!114 &4008241195006256801
 MonoBehaviour:
   m_ObjectHideFlags: 0
