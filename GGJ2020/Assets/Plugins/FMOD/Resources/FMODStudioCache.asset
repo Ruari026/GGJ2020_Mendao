@@ -1,0 +1,449 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4117453023459795558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game/StartGong
+  m_EditorClassIdentifier: 
+  Path: event:/Game/StartGong
+  guid: 01bad32f8e0efe4caa453e69ba668d11
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
+--- !u!114 &-3102197857338923061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Unity builds/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637162354820000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1778
+  Exists: 1
+--- !u!114 &-2653263309524436151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SignalLeft
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SignalLeft
+  guid: b4cf59adb24bb14ebceb79e5394b33f6
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &-2507840930566088498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/SuccessMusicDuck
+  m_EditorClassIdentifier: 
+  Path: snapshot:/SuccessMusicDuck
+  guid: 4b24ac447fa9064986dfe9139cdc2442
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1424946859548543426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimRight/RightSwim
+  m_EditorClassIdentifier: 
+  Name: RightSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 1
+--- !u!114 &-910679386037310491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragLeft/LeftStopDrag
+  m_EditorClassIdentifier: 
+  Name: LeftStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-241488750475179876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/DragLeft
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/DragLeft
+  guid: 71c01fcaa4e8e94fab93c4962fac9360
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -910679386037310491}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2551
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3102197857338923061}
+  - {fileID: 1233992303963730573}
+  EditorEvents:
+  - {fileID: -4117453023459795558}
+  - {fileID: 3663318932792446664}
+  - {fileID: 545387752205367111}
+  - {fileID: 1397497520437150122}
+  - {fileID: 5980836493800753281}
+  - {fileID: 1664918774285244670}
+  - {fileID: 1687473851522131333}
+  - {fileID: -2507840930566088498}
+  - {fileID: 3836962195412222208}
+  - {fileID: 8565687554332480485}
+  - {fileID: -241488750475179876}
+  - {fileID: -2653263309524436151}
+  - {fileID: 7123873018469530872}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1233992303963730573}
+  StringsBanks:
+  - {fileID: -3102197857338923061}
+  stringsBankWriteTime: 637162354820000000
+  cacheVersion: 3
+--- !u!114 &545387752205367111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game/Success
+  m_EditorClassIdentifier: 
+  Path: event:/Game/Success
+  guid: 1b140d686ba3fe4db1f19fadd38d38db
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7500
+--- !u!114 &1233992303963730573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Unity builds/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162354820000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2625248
+  Exists: 1
+--- !u!114 &1397497520437150122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: 216c875991364f4cb6364731a50270ec
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 124055
+--- !u!114 &1664918774285244670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/Repair
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/Repair
+  guid: 35c734b724d076428b3e3333c3a8438a
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 671
+--- !u!114 &1687473851522131333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/DragRight
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/DragRight
+  guid: 38f8709328ea424b9045793d97a6acbd
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8861019044230000816}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2551
+--- !u!114 &3663318932792446664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SignalRight
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SignalRight
+  guid: 132cc747787453419d734a0555e44a95
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &3836962195412222208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SwimRight
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SwimRight
+  guid: 4e67f673a3875f4fa2529ecd3477e972
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1424946859548543426}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
+--- !u!114 &5980836493800753281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/CaveAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/CaveAmbience
+  guid: 3410b0ec8259e34f8c149c47670daa1c
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2978
+--- !u!114 &7123873018469530872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/Destroy
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/Destroy
+  guid: cff27f12a752a244b688011814525f6e
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 347
+--- !u!114 &7712079887869463705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimLeft/LeftSwim
+  m_EditorClassIdentifier: 
+  Name: LeftSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 1
+--- !u!114 &8565687554332480485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fish/SwimLeft
+  m_EditorClassIdentifier: 
+  Path: event:/Fish/SwimLeft
+  guid: 5610f850649e6a429da82e7e2cc0c2c5
+  Banks:
+  - {fileID: 1233992303963730573}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7712079887869463705}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
+--- !u!114 &8861019044230000816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragRight/RightStopDrag
+  m_EditorClassIdentifier: 
+  Name: RightStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
