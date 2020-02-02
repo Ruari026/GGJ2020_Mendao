@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FishPushAbility : FishAbility
 {
     public float triggerDistance;
     public float triggerRadius;
+
+    public UnityEvent OnPushEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,7 @@ public class FishPushAbility : FishAbility
             PushableObject otherObject = c.gameObject.GetComponent<PushableObject>();
             if (otherObject != null)
             {
+                OnPushEvent.Invoke();
                 otherObject.Interact(this.gameObject, true);
             }
         }

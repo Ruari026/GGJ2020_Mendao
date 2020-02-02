@@ -74,22 +74,11 @@ MonoBehaviour:
           m_StringArgument: Repair
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4350309488286713985}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   OnObjectDestroy:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3090480415988182275}
-        m_MethodName: ResetTrigger
+        m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -356,12 +345,6 @@ PrefabInstance:
 --- !u!4 &4350309488286713998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8100914172383160649, guid: 22264b6588be20e409aad0d15ea30d0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5490835633259946439}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4350309488286713985 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8100914172383160646, guid: 22264b6588be20e409aad0d15ea30d0a,
     type: 3}
   m_PrefabInstance: {fileID: 5490835633259946439}
   m_PrefabAsset: {fileID: 0}
