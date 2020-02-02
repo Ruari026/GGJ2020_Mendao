@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4008241193540809317}
   - component: {fileID: 4008241193540809316}
   - component: {fileID: 4822463360041789295}
-  - component: {fileID: 4008241193540809319}
   - component: {fileID: 4008241195006256801}
   - component: {fileID: 4008241195006256806}
   m_Layer: 11
@@ -93,14 +92,6 @@ MonoBehaviour:
   EffectMaterial: {fileID: 2100000, guid: be092d30a5110534ab3bafd167680131, type: 2}
   minDisplacement: 0
   maxDisplacement: 0
---- !u!81 &4008241193540809319
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4008241193540809318}
-  m_Enabled: 0
 --- !u!114 &4008241195006256801
 MonoBehaviour:
   m_ObjectHideFlags: 0
