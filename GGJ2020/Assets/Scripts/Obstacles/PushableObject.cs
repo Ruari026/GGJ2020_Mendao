@@ -15,6 +15,11 @@ public class PushableObject : MonoBehaviour
 
     public UnityEvent onPathEnd;
 
+    [SerializeField]
+    private string fmodPushParam = "";
+    private float pushFloat = 0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -163,6 +168,34 @@ public class PushableObject : MonoBehaviour
             }
         }
 
+        if (movementDirection.magnitude > 0)
+        {
+
+             if (gameObject.tag == "LeftFish")
+             {
+                fmodPushParam = "LeftStopDrag";
+             }
+             else
+             {
+                fmodPushParam = "RightStopDrag";
+             }
+
+             
+                pushFloat = 0f;
+                FMODUnity.RuntimeManager.PlayOneShot(fmodPushParam, transform.position);
+                FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
+            emmiters[1].Play();
+            emmiters[1].SetParameter(fmodPushParam, pushFloat);
+        }     
+        else
+        {
+             {
+                FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
+                emmiters[1].Play();
+                emmiters[1].SetParameter(fmodPushParam, 1);
+             }
+
+        }
 
         // Checking how far along the path the object is
         // Checking direction of travel
@@ -226,6 +259,15 @@ public class PushableObject : MonoBehaviour
                 DetachFish(g);
             }
             onPathEnd.Invoke();
+            if (gameObject.tag == "LeftFish")
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Fish/SignalLeft", transform.position);
+            }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Fish/SignalRight", transform.position);
+            }
+            
         }
         else
         {
