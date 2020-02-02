@@ -129,9 +129,7 @@ public class PushableObject : MonoBehaviour
     {
         Rigidbody rb = fishToDetach.GetComponent<Rigidbody>();
         rb.ResetCenterOfMass();
-        rb.constraints = RigidbodyConstraints.FreezeRotationX;
-        rb.constraints = RigidbodyConstraints.FreezeRotationZ;
-        rb.constraints = RigidbodyConstraints.FreezePositionY;
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
 
         fishToDetach.transform.parent = null;
         attachedFish.Remove(fishToDetach);

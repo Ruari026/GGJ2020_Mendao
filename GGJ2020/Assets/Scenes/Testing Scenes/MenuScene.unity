@@ -6241,7 +6241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This game is best experienced with a controller
+  m_text: This game is best experienced with an xbox controller
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18cd06459efe9df458c457e8180cbe9b, type: 2}
   m_sharedMaterial: {fileID: -7271063398274407745, guid: 18cd06459efe9df458c457e8180cbe9b,
@@ -6311,13 +6311,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1254330957}
-    characterCount: 47
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 2
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6631,7 +6631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5894f5c92b4d8ca4a82876a969969ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectMaterial: {fileID: 2100000, guid: be092d30a5110534ab3bafd167680131, type: 2}
+  EffectMaterial: {fileID: 2100000, guid: 6eb1f0c9249046c4894ed4de8e0d3143, type: 2}
   minDisplacement: 0.005
   maxDisplacement: 0.015
 --- !u!114 &1560485852
