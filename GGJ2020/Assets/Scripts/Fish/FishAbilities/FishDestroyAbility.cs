@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FishDestroyAbility : FishAbility
 {
@@ -10,6 +11,8 @@ public class FishDestroyAbility : FishAbility
     public float destroyThreshold;
 
     private bool isDestroying = false;
+
+    public UnityEvent OnBoostEvent;
 
 
     // Start is called before the first frame update
@@ -34,6 +37,7 @@ public class FishDestroyAbility : FishAbility
     public override void ActivateFishAbility()
     {
         theRB.AddForce(this.transform.forward * chargeForce);
+        OnBoostEvent.Invoke();
     }
 
     private void OnCollisionEnter(Collision collision)
