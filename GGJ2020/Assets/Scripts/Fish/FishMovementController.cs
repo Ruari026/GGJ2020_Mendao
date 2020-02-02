@@ -16,7 +16,7 @@ public class FishMovementController : MonoBehaviour
     public float speed;
 
     [SerializeField]
-    private string fmodParam = "";
+    private string fmodSwimParam = "";
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +71,8 @@ public class FishMovementController : MonoBehaviour
 
         // Speed Output for Sound
         speed = theRB.velocity.magnitude;
-        GetComponent<FMODUnity.StudioEventEmitter>().SetParameter(fmodParam, speed);
+        //GetComponent<FMODUnity.StudioEventEmitter>().SetParameter(fmodParam, speed);
+        FMODUnity.StudioEventEmitter[] emmiters = GetComponents<FMODUnity.StudioEventEmitter>();
+        emmiters[0].SetParameter(fmodSwimParam, speed);
     }
 }

@@ -43,6 +43,7 @@ public class LevelEndObject : MonoBehaviour
 
             rightFish.GetComponent<FishMovementController>().enabled = false;
             rightFish.GetComponent<FishAbilityController>().enabled = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Game/Success", transform.position);
         }
     }
 
