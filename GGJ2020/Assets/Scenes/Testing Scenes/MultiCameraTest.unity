@@ -1484,8 +1484,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1356352630}
 =======
+=======
+>>>>>>> Stashed changes
   - {fileID: 8085395913479606223}
   - {fileID: 1783881942}
   - {fileID: 1848171145}
@@ -1906,6 +1909,7 @@ MeshFilter:
   m_GameObject: {fileID: 1676511140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1983535120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1919,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1724024110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,4 +2756,7 @@ Transform:
   m_Father: {fileID: 1332631155}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
