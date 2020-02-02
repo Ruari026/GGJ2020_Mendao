@@ -434,6 +434,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1124084834}
     m_Modifications:
+    - target: {fileID: 1691058131803922678, guid: c571b5d100cd57948861964266afe30a,
+        type: 3}
+      propertyPath: minDisplacement
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691058131803922678, guid: c571b5d100cd57948861964266afe30a,
+        type: 3}
+      propertyPath: maxDisplacement
+      value: 0.015
+      objectReference: {fileID: 0}
     - target: {fileID: 7078302539697494184, guid: c571b5d100cd57948861964266afe30a,
         type: 3}
       propertyPath: m_Name
