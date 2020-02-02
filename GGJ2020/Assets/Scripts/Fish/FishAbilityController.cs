@@ -22,6 +22,8 @@ public class FishAbilityController : MonoBehaviour
     {
         for (int i = 0; i < controllerAbilityTriggers.Count; i++)
         {
+            Debug.Log(controllerAbilityTriggers[i].ToString() + ": " + Input.GetAxis(controllerAbilityTriggers[i]));
+
             // Activating Abilitys
             if (Input.GetAxis(controllerAbilityTriggers[i]) > 0)
             {
@@ -43,8 +45,10 @@ public class FishAbilityController : MonoBehaviour
                     fishAbilities[i].ActivateFishAbility();
                 }
             }
+
+
             // Deactivating Abilities
-            else if ((Input.GetAxis(controllerAbilityTriggers[i]) == 0) && Input.GetKeyUp(keyboardAbilityTriggers[i]))
+            else if ((Input.GetAxis(controllerAbilityTriggers[i]) == 0) || Input.GetKeyUp(keyboardAbilityTriggers[i]))
             {
                 if (!fishAbilities[i].canTrigger)
                 {

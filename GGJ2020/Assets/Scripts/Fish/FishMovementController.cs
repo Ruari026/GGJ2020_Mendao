@@ -25,9 +25,9 @@ public class FishMovementController : MonoBehaviour
         // Test Input
         Vector3 desiredMovementDirection = new Vector3
         {
-            x = Input.GetAxis(horizontalInputCode),
+            x = (Input.GetAxis(horizontalInputCode + "Keyboard") + Input.GetAxis(horizontalInputCode + "Controller")),
             y = 0,
-            z = Input.GetAxis(verticalInputCode)
+            z = (Input.GetAxis(verticalInputCode + "Keyboard") + Input.GetAxis(verticalInputCode + "Controller"))
         };
         desiredMovementDirection.Normalize();
 
