@@ -11,6 +11,7 @@ public class FishMovementController : MonoBehaviour
     public float rotationSpeed = 30.0f;
     
     private Rigidbody theRB;
+    public Animator theAnimController;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,11 @@ public class FishMovementController : MonoBehaviour
 
             // Applying Forces
             theRB.AddTorque(rotationDirection.normalized * (rotationSpeed));
+            theAnimController.SetBool("IsMoving", true);
+        }
+        else
+        {
+            theAnimController.SetBool("IsMoving", false);
         }
         
     }

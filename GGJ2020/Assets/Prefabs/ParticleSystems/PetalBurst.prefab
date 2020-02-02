@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5054814244310789157}
   - component: {fileID: 5054814244310789162}
   - component: {fileID: 5054814244310789163}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PetalBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4786,8 +4786,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d6e9ba85902e4a45be3792b1a3ed2c4, type: 2}
-  - {fileID: 2100000, guid: 8d6e9ba85902e4a45be3792b1a3ed2c4, type: 2}
+  - {fileID: 2100000, guid: c0d3b250ad6e2c5429522f4352d3acd4, type: 2}
+  - {fileID: 2100000, guid: c0d3b250ad6e2c5429522f4352d3acd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

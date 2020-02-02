@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1608101620163864329}
   - component: {fileID: 1608101620163864326}
   - component: {fileID: 1608101620163864327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpeedBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,7 +866,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
