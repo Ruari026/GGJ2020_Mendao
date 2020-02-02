@@ -147,9 +147,9 @@ public class PushableObject : MonoBehaviour
             FishMovementController movementController = attachedFish[i].GetComponent<FishMovementController>();
             Vector3 desiredMovementDirection = new Vector3
             {
-                x = Input.GetAxis(movementController.horizontalInputCode),
+                x = (Input.GetAxis(movementController.horizontalInputCode + "Keyboard") + Input.GetAxis(movementController.horizontalInputCode + "Controller")),
                 y = 0,
-                z = Input.GetAxis(movementController.verticalInputCode)
+                z = (Input.GetAxis(movementController.verticalInputCode + "Keyboard") + Input.GetAxis(movementController.verticalInputCode + "Controller"))
             };
             desiredMovementDirection.Normalize();
 

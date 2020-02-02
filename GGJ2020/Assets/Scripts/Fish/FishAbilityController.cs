@@ -22,8 +22,6 @@ public class FishAbilityController : MonoBehaviour
     {
         for (int i = 0; i < controllerAbilityTriggers.Count; i++)
         {
-            Debug.Log(controllerAbilityTriggers[i].ToString() + ": " + Input.GetAxis(controllerAbilityTriggers[i]));
-
             // Activating Abilitys
             if (Input.GetAxis(controllerAbilityTriggers[i]) > 0)
             {
