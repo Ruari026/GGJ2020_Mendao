@@ -41,5 +41,6 @@ public class FishRestoreAbility : FishAbility
         // Triggering Restoration Animation On The Fish
         theAnimController.SetTrigger("Restoring");
         OnRestoreEvent.Invoke();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Fish/Repair", transform.position);
     }
 }

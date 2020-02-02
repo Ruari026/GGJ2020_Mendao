@@ -13,6 +13,11 @@ public class FishMovementController : MonoBehaviour
     private Rigidbody theRB;
     public Animator theAnimController;
 
+    public float speed;
+
+    [SerializeField]
+    private string fmodParam = "";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +68,9 @@ public class FishMovementController : MonoBehaviour
         {
             theAnimController.SetBool("IsMoving", false);
         }
-        
+
+        // Speed Output for Sound
+        speed = theRB.velocity.magnitude;
+        GetComponent<FMODUnity.StudioEventEmitter>().SetParameter(fmodParam, speed);
     }
 }

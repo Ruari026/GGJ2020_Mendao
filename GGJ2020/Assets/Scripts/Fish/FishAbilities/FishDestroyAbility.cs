@@ -38,6 +38,7 @@ public class FishDestroyAbility : FishAbility
     {
         theRB.AddForce(this.transform.forward * chargeForce);
         OnBoostEvent.Invoke();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Fish/Destroy", transform.position);
     }
 
     private void OnCollisionEnter(Collision collision)
