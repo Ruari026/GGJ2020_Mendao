@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -866,26 +866,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishPrefab (Right)
       objectReference: {fileID: 0}
-    - target: {fileID: 1883178348747549864, guid: 0d8c61f4d99800f48adaa72e47b28f31,
-        type: 3}
-      propertyPath: OnBoostEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883178348747549864, guid: 0d8c61f4d99800f48adaa72e47b28f31,
-        type: 3}
-      propertyPath: OnBoostEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883178348747549864, guid: 0d8c61f4d99800f48adaa72e47b28f31,
-        type: 3}
-      propertyPath: OnBoostEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883178348747549869, guid: 0d8c61f4d99800f48adaa72e47b28f31,
-        type: 3}
-      propertyPath: fmodParam
-      value: RightSwim
-      objectReference: {fileID: 0}
     - target: {fileID: 1883178348747549870, guid: 0d8c61f4d99800f48adaa72e47b28f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -950,11 +930,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 477397370204218053, guid: adb2c393e80540949b7de602d708db59,
-        type: 3}
-      propertyPath: fmodParam
-      value: LeftSwim
-      objectReference: {fileID: 0}
     - target: {fileID: 477397370204218054, guid: adb2c393e80540949b7de602d708db59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1023,55 +998,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8237269990820904512}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8426418560215489682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8426418560215489673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Fish/SwimLeft
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8426418561636922339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1883178348747549857, guid: 0d8c61f4d99800f48adaa72e47b28f31,
     type: 3}
   m_PrefabInstance: {fileID: 7985660260346863426}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8426418561636922348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8426418561636922339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Fish/SwimRight
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
