@@ -46,7 +46,7 @@ public class FishAbilityController : MonoBehaviour
 
 
             // Deactivating Abilities
-            else if ((Input.GetAxis(controllerAbilityTriggers[i]) == 0) || Input.GetKeyUp(keyboardAbilityTriggers[i]))
+            else if ((Input.GetAxis(controllerAbilityTriggers[i]) == 0) && !Input.GetKey(keyboardAbilityTriggers[i]))
             {
                 if (!fishAbilities[i].canTrigger)
                 {
