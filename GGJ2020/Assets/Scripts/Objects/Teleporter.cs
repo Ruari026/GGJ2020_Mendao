@@ -28,14 +28,25 @@ public class Teleporter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inRange == true && Input.GetKeyDown(KeyCode.T) && left == true)
-        {
-            fishLeft.transform.position = fishRight.transform.position;
-        }
-        else if (inRange == true && Input.GetKeyDown(KeyCode.T) && left == false)
-        {
-            fishRight.transform.position = fishLeft.transform.position;
-        }
+       
+            if (inRange == true && left == true)
+            {
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetAxis("FireL2") > 0)
+                {
+                    fishLeft.transform.position = fishRight.transform.position;
+                }
+            }
+
+            else if (inRange == true && left == false)
+            {
+         
+            
+                if (Input.GetKeyDown(KeyCode.O) || Input.GetAxis("FireR2") > 0)
+                {
+                    fishRight.transform.position = fishLeft.transform.position;
+                }
+            }
+        
     }
 
     private void OnTriggerEnter(Collider other)
