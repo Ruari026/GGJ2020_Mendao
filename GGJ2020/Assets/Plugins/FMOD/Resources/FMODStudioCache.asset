@@ -74,6 +74,23 @@ MonoBehaviour:
   - Name: 
     Value: 1778
   Exists: 1
+--- !u!114 &-4188532916224999184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragRight/RightStopDrag
+  m_EditorClassIdentifier: 
+  Name: RightStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4117453023459795558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +106,8 @@ MonoBehaviour:
   Path: event:/Game/StartGong
   guid: 01bad32f8e0efe4caa453e69ba668d11
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -132,7 +150,8 @@ MonoBehaviour:
   Path: event:/Fish/SignalLeft
   guid: b4cf59adb24bb14ebceb79e5394b33f6
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -155,7 +174,8 @@ MonoBehaviour:
   Path: snapshot:/SuccessMusicDuck
   guid: 4b24ac447fa9064986dfe9139cdc2442
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -197,6 +217,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-630875711183223862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimLeft/LeftSwim
+  m_EditorClassIdentifier: 
+  Name: LeftSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 0
 --- !u!114 &-241488750475179876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,15 +249,33 @@ MonoBehaviour:
   Path: event:/Fish/DragLeft
   guid: 71c01fcaa4e8e94fab93c4962fac9360
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8609894592592952903}
+  - {fileID: 7267668803973242504}
   MinDistance: 0
   MaxDistance: 0
   Length: 2551
+--- !u!114 &-42826652150881182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimRight/RightSwim
+  m_EditorClassIdentifier: 
+  Name: RightSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,8 +289,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -4302024228855182014}
-  - {fileID: -7736709057082204606}
+  - {fileID: 2871077706415782865}
+  - {fileID: 6527858641799391987}
   EditorEvents:
   - {fileID: -4117453023459795558}
   - {fileID: 3663318932792446664}
@@ -252,10 +307,10 @@ MonoBehaviour:
   - {fileID: 7123873018469530872}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 6527858641799391987}
   StringsBanks:
-  - {fileID: -4302024228855182014}
-  stringsBankWriteTime: 637162458640248273
+  - {fileID: 2871077706415782865}
+  stringsBankWriteTime: 637170630375700572
   cacheVersion: 3
 --- !u!114 &545387752205367111
 MonoBehaviour:
@@ -272,7 +327,8 @@ MonoBehaviour:
   Path: event:/Game/Success
   guid: 1b140d686ba3fe4db1f19fadd38d38db
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -280,6 +336,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7500
+--- !u!114 &847043876277372972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragLeft/LeftStopDrag
+  m_EditorClassIdentifier: 
+  Name: LeftStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1233992303963730573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +388,8 @@ MonoBehaviour:
   Path: event:/Music/Music
   guid: 216c875991364f4cb6364731a50270ec
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -338,7 +412,8 @@ MonoBehaviour:
   Path: event:/Fish/Repair
   guid: 35c734b724d076428b3e3333c3a8438a
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -361,15 +436,33 @@ MonoBehaviour:
   Path: event:/Fish/DragRight
   guid: 38f8709328ea424b9045793d97a6acbd
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 2692122225696746524}
+  - {fileID: -4188532916224999184}
   MinDistance: 0
   MaxDistance: 0
   Length: 2551
+--- !u!114 &2211256103278651300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimRight/RightSwim
+  m_EditorClassIdentifier: 
+  Name: RightSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 1
 --- !u!114 &2692122225696746524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +480,26 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &2871077706415782865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637170630375700572
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1778
+  Exists: 1
 --- !u!114 &3663318932792446664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +515,8 @@ MonoBehaviour:
   Path: event:/Fish/SignalRight
   guid: 132cc747787453419d734a0555e44a95
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -410,6 +524,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2500
+--- !u!114 &3804910952581457857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637170630375700572
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1778
+  Exists: 1
 --- !u!114 &3836962195412222208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,15 +559,70 @@ MonoBehaviour:
   Path: event:/Fish/SwimRight
   guid: 4e67f673a3875f4fa2529ecd3477e972
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8458354667522773953}
+  - {fileID: 2211256103278651300}
   MinDistance: 0
   MaxDistance: 0
   Length: 125
+--- !u!114 &4696061162503315508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SwimLeft/LeftSwim
+  m_EditorClassIdentifier: 
+  Name: LeftSwim
+  Min: 0
+  Max: 7.5
+  Default: 0
+  Exists: 1
+--- !u!114 &4808873292886229895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragRight/RightStopDrag
+  m_EditorClassIdentifier: 
+  Name: RightStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5284729692351523585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637170630375670528
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2625248
+  Exists: 1
 --- !u!114 &5980836493800753281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +638,8 @@ MonoBehaviour:
   Path: event:/Ambience/CaveAmbience
   guid: 3410b0ec8259e34f8c149c47670daa1c
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -457,6 +647,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2978
+--- !u!114 &6527858641799391987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:/Game Jams/GGJ2020/GGJ2020_Mendao/GGJ2020/Assets/FMODAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637170630375670528
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2625248
+  Exists: 1
 --- !u!114 &7123873018469530872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +682,8 @@ MonoBehaviour:
   Path: event:/Fish/Destroy
   guid: cff27f12a752a244b688011814525f6e
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -480,6 +691,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 347
+--- !u!114 &7267668803973242504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DragLeft/LeftStopDrag
+  m_EditorClassIdentifier: 
+  Name: LeftStopDrag
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &7712079887869463705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,12 +757,13 @@ MonoBehaviour:
   Path: event:/Fish/SwimLeft
   guid: 5610f850649e6a429da82e7e2cc0c2c5
   Banks:
-  - {fileID: -7736709057082204606}
+  - {fileID: 5284729692351523585}
+  - {fileID: 6527858641799391987}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7935001304037316742}
+  - {fileID: 4696061162503315508}
   MinDistance: 0
   MaxDistance: 0
   Length: 125

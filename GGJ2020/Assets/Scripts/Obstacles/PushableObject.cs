@@ -18,6 +18,7 @@ public class PushableObject : MonoBehaviour
     [SerializeField]
     private string fmodPushParam = "";
     private float pushFloat = 0f;
+    bool alreadyPushing = false;
 
 
     // Start is called before the first frame update
@@ -127,12 +128,17 @@ public class PushableObject : MonoBehaviour
     }
     private void DetachFish(GameObject fishToDetach)
     {
+        FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
+        emmiters[1].SetParameter(fmodPushParam, 1);
+        alreadyPushing = false;
+
         Rigidbody rb = fishToDetach.GetComponent<Rigidbody>();
         rb.ResetCenterOfMass();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
 
         fishToDetach.transform.parent = null;
         attachedFish.Remove(fishToDetach);
+
     }
 
 
@@ -170,31 +176,36 @@ public class PushableObject : MonoBehaviour
         if (movementDirection.magnitude > 0)
         {
 
-             if (gameObject.tag == "LeftFish")
-             {
+            if (attachedFish[0].tag == "LeftFish")
+            {
                 fmodPushParam = "LeftStopDrag";
-             }
-             else
-             {
+            }
+            else
+            {
                 fmodPushParam = "RightStopDrag";
-             }
+            }
 
-             
-                pushFloat = 0f;
-                FMODUnity.RuntimeManager.PlayOneShot(fmodPushParam, transform.position);
-                FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
-            emmiters[1].Play();
-            emmiters[1].SetParameter(fmodPushParam, pushFloat);
-        }     
-        else
-        {
-             {
+            pushFloat = 0f;
+
+            if (alreadyPushing != true)
+            {
                 FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
                 emmiters[1].Play();
-                emmiters[1].SetParameter(fmodPushParam, 1);
-             }
+                emmiters[1].SetParameter(fmodPushParam, pushFloat);
+
+                alreadyPushing = true;
+            }
+        }
+        else
+        {
+            FMODUnity.StudioEventEmitter[] emmiters = attachedFish[0].GetComponents<FMODUnity.StudioEventEmitter>();
+            emmiters[1].SetParameter(fmodPushParam, 1);
+
+            alreadyPushing = false;
 
         }
+               
+        
 
         // Checking how far along the path the object is
         // Checking direction of travel
@@ -258,7 +269,7 @@ public class PushableObject : MonoBehaviour
                 DetachFish(g);
             }
             onPathEnd.Invoke();
-            if (gameObject.tag == "LeftFish")
+            if (attachedFish[0].tag == "LeftFish")
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Fish/SignalLeft", transform.position);
             }
