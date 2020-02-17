@@ -88,7 +88,7 @@ MonoBehaviour:
   verticalInputCode: Vertical
   horizontalInputCode: Horizontal
   movementSpeed: 20
-  rotationSpeed: 5
+  rotationSpeed: 10
   theAnimController: {fileID: 2479574992260229905}
   speed: 0
   fmodSwimParam: RightSwim
@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canTrigger: 1
-  triggerDistance: 1
-  triggerRadius: 1
+  triggerDistance: 0
+  triggerRadius: 2
   OnPushEvent:
     m_PersistentCalls:
       m_Calls:

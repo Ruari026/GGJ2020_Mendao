@@ -9,8 +9,4 @@ public class FishAbility : MonoBehaviour
     {
 
     }
-    public virtual void DeactivateFishAbility()
-    {
-
-    }
 }

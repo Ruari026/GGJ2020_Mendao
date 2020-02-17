@@ -53,7 +53,6 @@ public class FishAbilityController : MonoBehaviour
                     canAbility = true;
 
                     fishAbilities[i].canTrigger = true;
-                    fishAbilities[i].DeactivateFishAbility();
                 }
             }
         }

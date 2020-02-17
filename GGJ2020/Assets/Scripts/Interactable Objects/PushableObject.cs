@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PushableObject : MonoBehaviour
+public class PushableObject : MonoBehaviour , IInteractable
 {
     public MovementDirection pushDirection;
 
@@ -43,15 +43,15 @@ public class PushableObject : MonoBehaviour
     Fish Interaction
     ====================================================================================================
     */
-    public void Interact(GameObject fish, bool isAttaching)
+    public void OnInteract(GameObject interactingFish)
     {
-        if (isAttaching)
+        if (attachedFish.Contains(interactingFish))
         {
-            AttachFish(fish);
+            AttachFish(interactingFish);
         }
         else
         {
-            DetachFish(fish);
+            DetachFish(interactingFish);
         }
     }
     private void AttachFish(GameObject fishToAttach)
